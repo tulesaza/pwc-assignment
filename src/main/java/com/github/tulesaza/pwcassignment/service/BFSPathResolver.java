@@ -15,7 +15,7 @@ public class BFSPathResolver implements PathResolver {
 
     @Override
     public List<String> path(String origin, String destination, Map<String, List<String>> graph) {
-        if (!graph.containsKey(origin) && !graph.containsKey(destination)) {
+        if (!graph.containsKey(origin) || !graph.containsKey(destination)) {
             return List.of();
         }
         var paths = new LinkedList<LinkedList<String>>();
