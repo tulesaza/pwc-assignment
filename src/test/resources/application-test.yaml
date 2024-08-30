@@ -1,0 +1,14 @@
+server:
+    port: 8080
+
+spring:
+  application:
+    name: pwc-assignment
+
+logging:
+  level:
+    root: INFO
+    com.github.tulesaza: DEBUG
+
+application:
+  countriesUrl: http://localhost:48080/mledoze/countries/master/countries.json
